@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #ffffff;
+  }
+  
+  a {
+    color: #ffffff;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #1818189c;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  .header li a {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, #4f5d77 50%, #3f547a);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-position: -100%;
+  }
+
+  .logoPIC{
+    height: 2em;
+  }
+
+  .icon_nav{
+    height: 1em;
+    }
+
+  .header .logo {
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 6px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -6px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 440px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  .uvod{
+    background-image: url(images/modelx_phone/pozadi.png);
+    background-size: cover;
+    height: 667px;
+    width: 100%;
+  }
+
+  aside{
+    width: 100%;
+    text-align: center;
+  }
+
+  .meet {
+    position: relative;
+    top:1.1em;
+    background: 50% 100% / 20% 20% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+    color: transparent;
+    font-size: 6rem;
+    animation: reveal 2000ms ease-in-out forwards 200ms,
+               glow 1500ms linear infinite 2000ms;
+    }
+  .modelx {
+    position: relative;
+    top:3.8em;
+    background: 50% 100% / 20% 20% no-repeat
+                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+    color: transparent;
+    font-size: 6rem;
+    animation: reveal 8000ms ease-in-out forwards 200ms,
+               glow 7000ms linear infinite 3000ms;
+    }
+  
+    @keyframes reveal {
+      80%{
+        letter-spacing: 2px;
+      }
+      100% {
+        background-size: 300% 300%;
+      }
+    }
+    @keyframes glow {
+      40% {
+        text-shadow: 0 0 3px #fff;
+      }
+    }
+
+    .pokracovani img{
+      width: 100%;
+    }
+
+    .pokracovani{
+      display:flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+   
+
+
+  .part1 {grid-area: part1;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 18px;}
+  .part2 {grid-area: part2;
+          padding-top: 6px;}
+  .part3 {grid-area: part3;
+          padding-top: 6px;}
+  .part4 {grid-area: part4;
+          padding-top: 6px;}
+  .part5 {grid-area: part5;
+          padding-top: 6px;}
+  .part6 {grid-area: part6;
+         padding-top: 6px;}
+  .part7 {grid-area: part7;
+          padding-top: 6px;}
+
+  footer{
+    color: #232323;
+    font-size: small;
+    background-color:#e8e2e4;
+    position: static;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    'part1 part2 part3 part4'
+    'part1 part5 part6 part7';
+    }
+    footer div:hover{
+        cursor: pointer;
+    }
+  
+
+    /*PHONE VERSION ABOVE*/
+  @media screen and (min-width: 767px) {
+    .uvod{
+      background-image: url(images/modelx_phone/pozadi_tablet.png);
+      background-size: cover;
+      height: 1024px;
+      width: 100%;
+    }
+
+    .meet{
+      font-size: 12em;
+      top: 0.2em;
+    }
+
+    .modelx{
+      font-size: 12em;
+      top: 2.7em;
+    }
+    
+  }
+
+  @media screen and (min-width: 769px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+
+    .pokracovani{
+      flex-direction: row;
+    }
+    .pokracovani img{
+      width: 70%;
+    }
+  }
+
+    /*TABLET VERSION*/
+
+  @media screen and (min-width: 1080px){
+
+    .uvod{
+      background-image: url(images/modelx_phone/pozadi_desktop.png);
+      background-size: cover;
+      height: 700px;
+      width: 100%;
+    }
+
+    .meet{
+      top:0.3em;
+    }
+
+    .modelx{
+      top:0.7em;
+    }
+
+    .header li a{
+        font-size: 2em;
+    }
+
+    .part1{
+        font-size: 1rem;
+    }
+
+    .logoPIC{
+        height: 3em;
+        transition: transform .2s;
+    }
+
+    .icon_nav{
+        height: 1em;
+        transition: transform .2s;
+    }
+
+    .icon_nav:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.1);  
+    }
+
+    .logoPIC:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1); 
+    }
+    .pokracovani{
+      flex-direction: row;
+    }
+    .pokracovani img{
+      transition: 1s all ease-in-out;
+      width: 30%;
+    }
+
+    .pokracovani img:hover{
+      transform:scale(0.9) ;
+    }
+
+  }
+  
+  /*DESKTOP VERSION*/

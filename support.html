@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style_support.css">
+    <link rel="icon" href="images/website_icon.png" type="image/icon type">
+    <meta name="description" content="SUVe electric car">
+    <meta name="keywords" content="car, suv, dream car, vehicle">
+    <title>Electric Car, Solar Energy | SUVē</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" onclick="location.href='index.html'" src="images/logo.png"></img>  
+            <div class="desktopNAV">
+                <a href="index.html">Home</a>
+                <a href="modelx.html">Model X</a>
+                <a href="support.html">Support</a>
+                <a href="testdrive.html">Test Drive</a>
+                <a href="signup.html">Sign Up</a>
+                <img class="icon_nav" src="images/search.png"></img>
+                <img class="icon_nav" src="images/basket.png"></img>
+            </div> 
+            <div class="myLinks" id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="modelx.html">Model X</a>
+                <a href="support.html">Support</a>
+                <a href="testdrive.html">Test Drive</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/menu-icon.png"
+                    alt="menu">
+            </a>
+        </nav>
+
+    </header>
+        <img src="images/picture.png" width="100%">
+    <form>
+        <div class="container">
+            <h1>hire a service</h1>
+            <label for="Roadside assistance"><b>Roadside assistance</b></label>
+            <input type="text" placeholder="Phone number" name="Roadside assistance" id="Roadside assistance">  
+            <button>Send</button>
+            <label for="tyrechange"><b>tyrechange</b></label>
+            <input type="text" placeholder="Email" name="Tyrechange" id="Tyrechange"> 
+            <button>Send</button>
+            <label for="maintenance"><b>maintenance</b></label>
+            <input type="text" placeholder="Email" name="Maintenance" id="Maintenance"> 
+            <button>Send</button>
+        </div> 
+        <div class="container">
+            <h1>contact us</h1>
+            <input type="text" placeholder="Inquiry*" name="Inquiry" id="Inquiry">  
+            <input type="text" placeholder="Fullname" name="Fullname" id="Fullname"> 
+            <input type="text" placeholder="Email" name="Email" id="Email">
+            <input type="text" placeholder="Message" name="Message" id="Message" class="inputComment">
+            <button>Send</button>
+        </div>
+    </form>
+
+    <div class="container">
+        <h1 class="faqq">FAQ</h1>
+        <button class="accordion">Is the car custom made?</button>
+        <div class="panel">
+          <p>It depends on what features for the car you desire, there are some vehicles that already have been put together and are ready for purchase.</p>
+        </div>
+        
+        <button class="accordion">How long I have to wait to get the car?</button>
+        <div class="panel">
+          <p>This depends on what you have chosen, If you choose a car that is in our salon as it is as soon as the purchase has been confirmed you get the keys and drive away in your new car. If you choose a custom made vehicle that depends on what features you have added and that can be up to month and half. Our team is in constant communication with you, so you at all times know what is going on with your dream car. </p>
+        </div>
+        
+        <button class="accordion">Is the car 100% recyclable?</button>
+        <div class="panel">
+          <p>Unfortunately not 100% we still haven't found a safe and clean way to utilize solar panels. Each solar panel's lifespan is from 25-30 years which means the last long and we hope that by the end of their lifespan we will have a clean way to get rid of them. 
+            Every other detail in car after it have served its purpose is 100% recyclable.
+            </p>
+        </div>
+    </div> 
+
+    <footer class="phone">
+        <p class="foter">SUVē © 2020.</p>
+        <p class="foter">Privacy & Legal</p>
+    </footer>
+
+    <footer class="tablet">
+        <p class="foterTABLET">SUVē © 2020.</p>
+        <p class="foterTABLET">Privacy & Legal</p>
+        <p class="foterTABLET">News</p>
+        <p class="foterTABLET">Contact</p>
+    </footer>
+
+    <footer class="desktop">
+        <p class="foterDESKTOP">SUVē © 2020.</p>
+        <p class="foterDESKTOP">Privacy & Legal</p>
+        <p class="foterDESKTOP">News</p>
+        <p class="foterDESKTOP">Contact</p>
+        <p class="foterDESKTOP">Careers</p>
+        <p class="foterDESKTOP">Get Newsletter</p>
+        <p class="foterDESKTOP">Forum</p>
+    </footer>
+    
+</body>
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+</script>
+
+</html>

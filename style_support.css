@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    overflow: hidden;
+    position: absolute;
+    background-color: #1818189c;
+    margin-bottom: 30px;
+    top: 0;
+    width: 100%;
+    
+
+    /*box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.205);*/
+}
+
+nav #myLinks {
+    display: none;
+}
+
+nav a {
+    color:  #faf8f8;;
+    padding: 2rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+
+nav a.icon {
+    display: block;
+    color: #faf8f8;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.logo{
+    padding: 1.5rem;
+    height: 2rem;
+}
+
+a:link{
+    color: #faf8f8;
+    font-weight: lighter;
+}
+
+
+footer{
+    display: flex; 
+    bottom:0;
+    width:100%;
+    height:3rem;
+    background-color: #faf8f8;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -5rem;
+}
+
+.foter{
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.foterTABLET{
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.foterDESKTOP{
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.foter:hover{
+    font-weight: bold;
+}
+
+.foterTABLET:hover{
+    font-weight: bold;
+}
+
+.foterDESKTOP:hover{
+    font-weight: bold;
+}
+
+.foterTABLET{
+    opacity: 0;
+}
+.tablet{
+    opacity: 0;
+}
+
+.foterDESKTOP{
+    opacity: 0;
+}
+.desktop{
+    opacity: 0;
+}
+
+.desktopNAV{
+    opacity: 0;
+}
+.desktopNAV{
+    margin-top: -28rem;
+}
+
+/* DONT TOUCH CODE ABOVE ITS HEADER AND FOOTER */ 
+/* DONT TOUCH CODE ABOVE ITS HEADER AND FOOTER */ 
+/* DONT TOUCH CODE ABOVE ITS HEADER AND FOOTER */ 
+/* DONT TOUCH CODE ABOVE ITS HEADER AND FOOTER */ 
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    padding: 16px;
+}
+
+h1{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+
+label{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+input[type=text]{
+    width: 100%;
+    text-align: left;
+    padding-top: 15px;
+    margin: 5px 0 0px 0;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+    padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    float: right;
+}
+
+.accordion {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-color: #000000;
+    outline-style: inherit;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+@media screen and (min-width: 666px) {
+    form{
+        max-width: 50%;
+        align-items: center;
+    }
+    .container{
+        align-items: center;
+        justify-content: center;
+        margin-left: 13rem;
+        margin-right: -13rem;
+    }
+    .faqq{
+        margin-left: -24rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1080px) {
+    form{
+        max-width: 50%;
+        align-items: center;
+    }
+    .container{
+        margin-left: 35rem;
+        margin-right: -25rem;
+        font-size: 1.5rem;
+    }
+
+    .faqq{
+        margin-left: -59rem;
+    }
+
+    .panel{
+        width: 42%;
+    }
+
+    .accordion{
+        font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+        
+}
+
+@media screen and (min-width: 666px) {
+    .foterTABLET{
+        opacity: 1;
+    }
+    .tablet{
+        opacity: 1;
+    }
+    .phone{
+        opacity: 0;
+    }
+    .desktopNAV{
+        margin-top: -28rem;
+    }
+    button {
+        float: center;
+}
+}
+
+@media screen and (min-width: 1080px) {
+    .foterDESKTOP{
+        opacity: 1;
+    }
+    .desktop{
+        opacity: 1;
+    }
+    .tablet{
+        opacity: 0;
+    }
+    .phone{
+        opacity: 0;
+    }
+    .myLinks{
+        opacity: 0;
+    }
+    .icon{
+        opacity: 0;
+    }
+
+    .logo{
+        height: 4rem;
+    }
+
+    .desktopNAV{
+        display:flex;
+        width: 80%;
+        opacity: 1;
+        text-align: center;
+        position: absolute;
+        left: 20%;
+        justify-content: space-evenly;
+        padding: 1rem;
+        margin-top: -8rem;
+    }
+    .desktopNAV a{
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    .desktopNAV a:hover{
+        color:#3f547a;
+        cursor: pointer;
+    }
+
+    .icon_nav{
+        height: 2rem;
+        margin-left: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+}
