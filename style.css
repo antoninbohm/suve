@@ -192,7 +192,7 @@ body {
     }
     @keyframes glow {
       40% {
-        text-shadow: 0 0 3px #fff;
+        text-shadow: 0 0 4px #fff;
       }
     }
 
@@ -201,13 +201,75 @@ body {
     }
 
     .pokracovani{
+      padding-bottom: 1.5em;
+      padding-top: 1.5em;
       display:flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
     }
+
+    
+    .detail_grid{
+      position: static;
+      width: 100%;
+      display: grid;
+      grid-template-areas:
+      'img1 img1des'
+      'img2des img2';
+    }
+
+    .img1 { grid-area: img1; width: 100%;opacity: 0.9; transition: .5s ease;}
+    .img1:hover{opacity: 1;}
+    .img1des { grid-area: img1des; text-align: center; padding-top: 20%;}
+    .img2 { grid-area: img2; width: 100%;opacity: 0.9; transition: .5s ease;}
+    .img2:hover{opacity: 1;}
+    .img2des { grid-area: img2des; text-align: center; padding-top: 32%;}
    
+    .specs{
+      text-align: center;
+      position: static;
+      width: 100%;
+      display: grid;
+      grid-template-areas:
+      'h2'
+      'specs1'
+      'specs2';
+    }
+
+
+
+    h2{ grid-area: h2; font-weight: bold; font-size: 2.5em; padding-top: 1.5em;}
+    h3{ font-weight: bold; font-size: 1.5em; padding-bottom: .5em; padding-top: .5em;} 
+    .specs1{ grid-area: specs1;}
+    .specs2{ grid-area: specs2;}
+
+    .btn{
+      margin-top: 2em;
+      margin-bottom: 2em;
+      text-align: center;
+    }
+    button{
+      background-color: #3f547a;
+      border: none;
+      padding: 1em;
+      color: #ffffff;
+      border-radius: 25px;
+      transition: 2s ease;
+      animation: glow 7000ms linear infinite 3000ms;
+    }
+
+    button:hover{
+      cursor: pointer;
+      background-color: #467a3fd2;
+    }
+
+    .shop{
+      width: 100%;
+      cursor: pointer;
+    }
+
 
 
   .part1 {grid-area: part1;
@@ -263,6 +325,25 @@ body {
     .modelx{
       font-size: 12em;
       top: 2.7em;
+    }
+
+    .detail_grid{
+      font-size: 2em;
+    }
+
+    .specs{
+      display: grid;
+      grid-template-areas:
+      'h2 h2'
+      'specs1 specs2';
+    }
+
+    .specs p{
+      font-size: 1.5em;
+    }
+
+    h3{
+      font-size: 2em;
     }
     
   }
@@ -343,12 +424,24 @@ body {
       flex-direction: row;
     }
     .pokracovani img{
+      padding-top: 100px;
+      padding-bottom: 100px;
       transition: 1s all ease-in-out;
       width: 30%;
     }
 
     .pokracovani img:hover{
       transform:scale(0.9) ;
+    }
+
+    .detail_grid{
+      position: relative;
+      width: 70%;
+      left: 15%
+    }
+
+    button{
+      font-size: 2em;
     }
 
   }
