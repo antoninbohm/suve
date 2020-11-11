@@ -1,135 +1,314 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style_support.css">
-    <link rel="icon" href="images/website_icon.png" type="image/icon type">
-    <meta name="description" content="SUVe electric car">
-    <meta name="keywords" content="car, suv, dream car, vehicle">
-    <title>Electric Car, Solar Energy | SUVē</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <img class="logo" onclick="location.href='index.html'" src="images/logo.png"></img>  
-            <div class="desktopNAV">
-                <a href="index.html">Home</a>
-                <a href="modelx.html">Model X</a>
-                <a href="support.html">Support</a>
-                <a href="testdrive.html">Test Drive</a>
-                <a href="signup.html">Sign Up</a>
-                <img class="icon_nav" src="images/search.png"></img>
-                <img class="icon_nav" src="images/basket.png"></img>
-            </div> 
-            <div class="myLinks" id="myLinks">
-                <a href="index.html">Home</a>
-                <a href="modelx.html">Model X</a>
-                <a href="support.html">Support</a>
-                <a href="testdrive.html">Test Drive</a>
-                <a href="signup.html">Sign Up</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/menu-icon.png"
-                    alt="menu">
-            </a>
-        </nav>
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
-    </header>
-        <img src="images/picture.png" width="100%">
-    <form>
-        <div class="container">
-            <h1>hire a service</h1>
-            <label for="Roadside assistance"><b>Roadside assistance</b></label>
-            <input type="text" placeholder="Phone number" name="Roadside assistance" id="Roadside assistance">  
-            <button>Send</button>
-            <label for="tyrechange"><b>tyrechange</b></label>
-            <input type="text" placeholder="Email" name="Tyrechange" id="Tyrechange"> 
-            <button>Send</button>
-            <label for="maintenance"><b>maintenance</b></label>
-            <input type="text" placeholder="Email" name="Maintenance" id="Maintenance"> 
-            <button>Send</button>
-        </div> 
-        <div class="container">
-            <h1>contact us</h1>
-            <input type="text" placeholder="Inquiry*" name="Inquiry" id="Inquiry">  
-            <input type="text" placeholder="Fullname" name="Fullname" id="Fullname"> 
-            <input type="text" placeholder="Email" name="Email" id="Email">
-            <input type="text" placeholder="Message" name="Message" id="Message" class="inputComment">
-            <button>Send</button>
-        </div>
-    </form>
-
-    <div class="container">
-        <h1 class="faqq">FAQ</h1>
-        <button class="accordion">Is the car custom made?</button>
-        <div class="panel">
-          <p>It depends on what features for the car you desire, there are some vehicles that already have been put together and are ready for purchase.</p>
-        </div>
-        
-        <button class="accordion">How long I have to wait to get the car?</button>
-        <div class="panel">
-          <p>This depends on what you have chosen, If you choose a car that is in our salon as it is as soon as the purchase has been confirmed you get the keys and drive away in your new car. If you choose a custom made vehicle that depends on what features you have added and that can be up to month and half. Our team is in constant communication with you, so you at all times know what is going on with your dream car. </p>
-        </div>
-        
-        <button class="accordion">Is the car 100% recyclable?</button>
-        <div class="panel">
-          <p>Unfortunately not 100% we still haven't found a safe and clean way to utilize solar panels. Each solar panel's lifespan is from 25-30 years which means the last long and we hope that by the end of their lifespan we will have a clean way to get rid of them. 
-            Every other detail in car after it have served its purpose is 100% recyclable.
-            </p>
-        </div>
-    </div> 
-
-    <footer class="phone">
-        <p class="foter">SUVē © 2020.</p>
-        <p class="foter">Privacy & Legal</p>
-    </footer>
-
-    <footer class="tablet">
-        <p class="foterTABLET">SUVē © 2020.</p>
-        <p class="foterTABLET">Privacy & Legal</p>
-        <p class="foterTABLET">News</p>
-        <p class="foterTABLET">Contact</p>
-    </footer>
-
-    <footer class="desktop">
-        <p class="foterDESKTOP">SUVē © 2020.</p>
-        <p class="foterDESKTOP">Privacy & Legal</p>
-        <p class="foterDESKTOP">News</p>
-        <p class="foterDESKTOP">Contact</p>
-        <p class="foterDESKTOP">Careers</p>
-        <p class="foterDESKTOP">Get Newsletter</p>
-        <p class="foterDESKTOP">Forum</p>
-    </footer>
-    
-</body>
-
-<script>
-    function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+* {
+    margin: 0;
+    padding: 0;
 }
-</script>
 
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    color: #ffffff;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #1818189c;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  .header li a {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, #4f5d77 50%, #3f547a);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-position: -100%;
+  }
+
+  .logoPIC{
+    height: 2em;
+  }
+
+  .icon_nav{
+    height: 1em;
     }
-</script>
 
-</html>
+  .header .logo {
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 6px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -6px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 440px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  .container {
+    padding: 16px;
+}
+
+.obr{
+  position: relative;
+  width: 100%;
+}
+
+h1{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+input[type=text]{
+    width: 100%;
+    text-align: left;
+    padding-top: 15px;
+    margin: 5px 0 0px 0;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+    padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    float: right;
+}
+
+.accordion {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-color: #000000;
+    outline-style: inherit;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+  .part1 {grid-area: part1;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 18px;}
+  .part2 {grid-area: part2;
+          padding-top: 6px;}
+  .part3 {grid-area: part3;
+          padding-top: 6px;}
+  .part4 {grid-area: part4;
+          padding-top: 6px;}
+  .part5 {grid-area: part5;
+          padding-top: 6px;}
+  .part6 {grid-area: part6;
+         padding-top: 6px;}
+  .part7 {grid-area: part7;
+          padding-top: 6px;}
+
+  footer{
+    color: #232323;
+    font-size: small;
+    background-color:#e8e2e4;
+    position: static;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    'part1 part2 part3 part4'
+    'part1 part5 part6 part7';
+    }
+    footer div:hover{
+        cursor: pointer;
+    }
+  
+
+    /*PHONE VERSION ABOVE*/
+
+  @media screen and (min-width: 769px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 767px) {
+    .alles{
+      position: relative;
+      left: 15%;
+      width: 70%;
+    }
+    
+  }
+
+    /*TABLET VERSION*/
+
+  @media screen and (min-width: 1080px){
+    .header li a{
+        font-size: 2em;
+    }
+
+    .part1{
+        font-size: 1rem;
+    }
+
+    .logoPIC{
+        height: 3em;
+        transition: transform .2s;
+    }
+
+    .icon_nav{
+        height: 1em;
+        transition: transform .2s;
+    }
+
+    .icon_nav:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.1);  
+    }
+
+    .logoPIC:hover{
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1); 
+    }
+
+    .obr{
+      top: -20em;
+    }
+
+    .alles{
+      position: relative;
+      left: 15%;
+      width: 70%;
+      top: -15em;
+    }
+
+  }
+  
+  /*DESKTOP VERSION*/
