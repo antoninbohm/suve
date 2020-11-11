@@ -1,92 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style_test.css">
+    <link rel="stylesheet" href="style_testdrive.css">
     <link rel="icon" href="images/website_icon.png" type="image/icon type">
     <meta name="description" content="SUVe electric car">
     <meta name="keywords" content="car, suv, dream car, vehicle">
     <title>Electric Car, Solar Energy | SUVē</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <img class="logo" onclick="location.href='index.html'" src="images/logo.png"></img>
-            <div class="desktopNAV">
-                <a href="index.html">Home</a>
-                <a href="modelx.html">Model X</a>
-                <a href="support.html">Support</a>
-                <a href="testdrive.html">Test Drive</a>
-                <a href="signup.html">Sign Up</a>
-                <img class="icon_nav" src="images/search.png"></img>
-                <img class="icon_nav" src="images/basket.png"></img>
-            </div>
-            <div class="myLinks" id="myLinks">
-                <a href="index.html">Home</a>
-                <a href="modelx.html">Model X</a>
-                <a href="support.html">Support</a>
-                <a href="testdrive.html">Test Drive</a>
-                <a href="signup.html">Sign Up</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/menu-icon.png"
-                    alt="menu">
-            </a>
-        </nav>
+  <header class="header">
+    <a href="index.html" class="logo"><img class="logoPIC" src="images/logo.png"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="modelx.html">Model X</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="testdrive.html">Test Drive</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="#search"><img class="icon_nav" src="images/search.png"></a></li>
+      <li><a href="#basket"><img class="icon_nav" src="images/basket.png"></a></li>
+    </ul>
+  </header>
+     
+        <section class="YOUR_SECTION">
+          <div class="center">
+              <h1> Test Ride</h1>
+              <p> Experience the ride of your life.</p>
+          </div>
+          <div class="bottom_left">
+              <h2> go <br> with <br> Suvē</h2>
+          </div>
+          <div class="form">
+              <h2>Apply here</h2>
+              <input class="email" type="text" name="email" placeholder="E-mail">
+              <button class="submit"> SUBMIT</button>
+          </div>
+       </section>  
 
-    </header>
-
-    <section class="YOUR_SECTION">
-        <div class="center">
-            <h1> Test Ride</h1>
-            <p> Experience the ride of your life.</p>
-        </div>
-        <div class="bottom_left">
-            <h2> go <br> with <br> Suvē</h2>
-        </div>
-        <div class="form">
-            <h2>Apply here</h2>
-            <input class="email" type="text" name="email" placeholder="E-mail">
-            <button class="submit"> SUBMIT</button>
-        </div>
-    </section>
-
-    <footer class="phone">
-        <p class="foter">SUVē © 2020.</p>
-        <p class="foter">Privacy & Legal</p>
-    </footer>
-
-    <footer class="tablet">
-        <p class="foterTABLET">SUVē © 2020.</p>
-        <p class="foterTABLET">Privacy & Legal</p>
-        <p class="foterTABLET">News</p>
-        <p class="foterTABLET">Contact</p>
-    </footer>
-
-    <footer class="desktop">
-        <p class="foterDESKTOP">SUVē © 2020.</p>
-        <p class="foterDESKTOP">Privacy & Legal</p>
-        <p class="foterDESKTOP">News</p>
-        <p class="foterDESKTOP">Contact</p>
-        <p class="foterDESKTOP">Careers</p>
-        <p class="foterDESKTOP">Get Newsletter</p>
-        <p class="foterDESKTOP">Forum</p>
-    </footer>
-
+      <footer>
+        <div class="part1">SUVē © 2020.</div>
+        <div class="part2">Privacy & Legal</div>
+        <div class="part3">News</div>
+        <div class="part4">Contact</div>
+        <div class="part5">Careers</div>
+        <div class="part6">Get Newsletter</div>
+        <div class="part7">Forum</div>
+      </footer>
 </body>
-
-<script>
-    function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>
-
 </html>

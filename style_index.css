@@ -11,7 +11,7 @@
 body {
     margin: 0;
     font-family: 'Titillium Web', sans-serif;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
   }
   
   a {
@@ -143,133 +143,100 @@ body {
     top: 0;
   }
 
-  .uvod{
-    background-image: url(images/modelx_phone/pozadi.png);
+  .main{
+    background-image: url(images/homebackground.jpg);
     background-size: cover;
-    height: 667px;
+    height: 230px;
+    width: 100%;
+  }
+  .main2{
+    margin-top: 2.5px;
+    background-image: url(images/closeupp.jpg);
+    background-size: cover;
+    height: 230px;
+    width: 100%;
+  }
+  .main3{
+    margin-top: 2.5px;
+    background-image: url(images/comingsoon.jpg);
+    background-size: cover;
+    height: 230px;
     width: 100%;
   }
 
-  aside{
-    width: 100%;
+  .meet{
+    color: white;
+    position: relative;
     text-align: center;
+    font-size: 2em;
+    background: 50% 100% / 20% 20% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+animation: reveal 2000ms ease-in-out forwards 200ms,
+   glow 7000ms linear infinite 3000ms;
+font-weight: bold;
+}
+
+@keyframes reveal {
+80%{
+letter-spacing: 2px;
+}
+100% {
+background-size: 300% 300%;
+}
+}
+@keyframes glow {
+40% {
+text-shadow: 0 0 4px #fff;
+}
+}
+
+  .y{
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 2em;
   }
 
-  .meet {
+  .read{
+    color: white;
     position: relative;
-    top:1.1em;
-    background: 50% 100% / 20% 20% no-repeat
-                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-weight: bold;
-    color: transparent;
-    font-size: 6rem;
-    animation: reveal 2000ms ease-in-out forwards 200ms,
-               glow 1500ms linear infinite 2000ms;
-    }
-  .modelx {
+    text-align: center;
+    font-size: 1em;
+    text-decoration: underline;
+  }
+  .read:hover{
+    color: rgba(255, 255, 255, 0.404);
+    cursor: pointer;
+  }
+
+  .buy{
+    color: white;
+    font-weight: 700;
     position: relative;
-    top:3.8em;
-    background: 50% 100% / 20% 20% no-repeat
-                radial-gradient(ellipse at bottom, #fff, transparent, transparent);
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-weight: bold;
-    color: transparent;
-    font-size: 6rem;
-    animation: reveal 4000ms ease-in-out forwards 200ms,
-               glow 4000ms linear infinite 3000ms;
-    }
-  
-    @keyframes reveal {
-      80%{
-        letter-spacing: 2px;
-      }
-      100% {
-        background-size: 300% 300%;
-      }
-    }
-    @keyframes glow {
-      40% {
-        text-shadow: 0 0 4px #fff;
-      }
-    }
+    text-align: center;
+    font-size: 2em;
+  }
 
-    .pokracovani img{
-      width: 100%;
-    }
+  .po{
+    width: 20%;
+    position: relative;
+    left:70%;
+    top: 35%
+  }
 
-    .pokracovani{
-      padding-bottom: 1.5em;
-      padding-top: 1.5em;
-      display:flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-    }
+  .pos{
+    width: 50%;
+    position: relative;
 
-    
-    .detail_grid{
-      position: static;
-      width: 100%;
-      display: grid;
-      grid-template-areas:
-      'img1 img1des'
-      'img2des img2';
-    }
+    left:25%;
+    top: 35%
+  }
 
-    .img1 { grid-area: img1; width: 100%;opacity: 0.9; transition: .5s ease;}
-    .img1:hover{opacity: 1;}
-    .img1des { grid-area: img1des; text-align: center; padding-top: 20%;}
-    .img2 { grid-area: img2; width: 100%;opacity: 0.9; transition: .5s ease;}
-    .img2:hover{opacity: 1;}
-    .img2des { grid-area: img2des; text-align: center; padding-top: 32%;}
+
    
-    .specs{
-      text-align: center;
-      position: static;
-      width: 100%;
-      display: grid;
-      grid-template-areas:
-      'h2'
-      'specs1'
-      'specs2';
-    }
-
-
-
-    h2{ grid-area: h2; font-weight: bold; font-size: 2.5em; padding-top: 1.5em;}
-    h3{ font-weight: bold; font-size: 1.5em; padding-bottom: .5em; padding-top: .5em;} 
-    .specs1{ grid-area: specs1;}
-    .specs2{ grid-area: specs2;}
-
-    .btn{
-      margin-top: 2em;
-      margin-bottom: 2em;
-      text-align: center;
-    }
-    button{
-      background-color: #3f547a;
-      border: none;
-      padding: 1em;
-      color: #ffffff;
-      border-radius: 25px;
-      transition: 2s ease;
-      animation: glow 7000ms linear infinite 3000ms;
-    }
-
-    button:hover{
-      cursor: pointer;
-      background-color: #467a3fd2;
-    }
-
-    .shop{
-      width: 100%;
-      cursor: pointer;
-    }
-
 
 
   .part1 {grid-area: part1;
@@ -309,44 +276,6 @@ body {
   
 
     /*PHONE VERSION ABOVE*/
-  @media screen and (min-width: 767px) {
-    .uvod{
-      background-image: url(images/modelx_phone/pozadi_tablet.png);
-      background-size: cover;
-      height: 1024px;
-      width: 100%;
-    }
-
-    .meet{
-      font-size: 12em;
-      top: 0.2em;
-    }
-
-    .modelx{
-      font-size: 12em;
-      top: 2.7em;
-    }
-
-    .detail_grid{
-      font-size: 2em;
-    }
-
-    .specs{
-      display: grid;
-      grid-template-areas:
-      'h2 h2'
-      'specs1 specs2';
-    }
-
-    .specs p{
-      font-size: 1.5em;
-    }
-
-    h3{
-      font-size: 2em;
-    }
-    
-  }
 
   @media screen and (min-width: 769px) {
     .header li {
@@ -364,33 +293,85 @@ body {
       display: none;
     }
 
-    .pokracovani{
-      flex-direction: row;
+
+    
+  }
+
+  @media screen and (min-width: 767px){
+    .main{
+      background-image: url(images/homebck.jpg);
+      height: 500px;
+      opacity: 0.95;
+      transition: .3s ease-in-out;
     }
-    .pokracovani img{
-      width: 70%;
+    .main:hover{
+      opacity: 1;
     }
+    .meet{
+      background: 50% 100% / 20% 20% no-repeat
+                  radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: reveal 2000ms ease-in-out forwards 200ms,
+                 glow 7000ms linear infinite 3000ms;
+      font-size: 4em;
+      font-weight: bold;
+    }
+
+    @keyframes reveal {
+      80%{
+        letter-spacing: 2px;
+      }
+      100% {
+        background-size: 300% 300%;
+      }
+    }
+    @keyframes glow {
+      40% {
+        text-shadow: 0 0 4px #fff;
+      }
+    }
+
+
+    .po{
+      top: 30%
+    }
+    .main2{
+      background-image: url(images/newcloseup.png);
+      height: 500px;
+      opacity: 0.95;
+      transition: .3s ease-in-out;
+    }
+    .main2:hover{
+      opacity: 1;
+    }
+    .buy{
+      font-size: 6em;
+    }
+    .read{
+      font-size: 2em;
+    }
+
+    .y{
+      font-size: 4em;
+    }
+
+    .main3{
+      background-image: url(images/newcoming.jpg);
+      height: 500px;
+      opacity: 0.95;
+      transition: .3s ease-in-out;
+    }
+    .main3:hover{
+      opacity: 1;
+    }
+    
   }
 
     /*TABLET VERSION*/
 
   @media screen and (min-width: 1080px){
-
-    .uvod{
-      background-image: url(images/modelx_phone/pozadi_desktop.png);
-      background-size: cover;
-      height: 700px;
-      width: 100%;
-    }
-
-    .meet{
-      top:0.3em;
-    }
-
-    .modelx{
-      top:0.7em;
-    }
-
     .header li a{
         font-size: 2em;
     }
@@ -420,28 +401,9 @@ body {
         -webkit-transform: scale(1.4);
         transform: scale(1.1); 
     }
-    .pokracovani{
-      flex-direction: row;
-    }
-    .pokracovani img{
-      padding-top: 100px;
-      padding-bottom: 100px;
-      transition: 1s all ease-in-out;
-      width: 30%;
-    }
 
-    .pokracovani img:hover{
-      transform:scale(0.9) ;
-    }
-
-    .detail_grid{
-      position: relative;
-      width: 70%;
-      left: 15%
-    }
-
-    button{
-      font-size: 2em;
+    .buy{
+      font-size: 8em;
     }
 
   }
